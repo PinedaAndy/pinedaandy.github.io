@@ -1,47 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
+<!--Header-->
+
   <head>
     <meta charset="utf-8">
-    <title>Birdwatching</title>
+    <meta name="description" content=" INST377 Lab 3 Assignment" />
+    <meta http-equiv="author" content="Andy Pineda" />
+
+
+
+    <title>My Page</title>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
+    <link href="index_style.css" type="text/css" rel="stylesheet" />
 
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
   </head>
 
+
+
+
+<!-- Body -->
   <body>
 
-      <h1>Birdwatching</h1>
-      <img src="dove.png" alt="a simple dove logo">
+    <div class="header">
+
+      <h1> Andy Pineda Lab 3 </h1>
+      <img src="dove.png" alt="a simple dove logo" id="dove"/> 
+      <nav>
+          <ul>
+            <li><span>Home</span></li>
+            <li><a href="#">Get started</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Gear</a></li>
+            <li><a href="#">Forum</a></li>
+          </ul>
+      </nav>
+
+    </div>
+    
 
 
-      <ul>
-        <li><span>Home</span></li>
-        <li><a href="#">Get started</a></li>
-        <li><a href="#">Photos</a></li>
-        <li><a href="#">Gear</a></li>
-        <li><a href="#">Forum</a></li>
-      </ul>
 
 
-      <h2>Welcome</h2>
 
-      <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.</p>
-
-      <p>So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!</p>
-
-      <h2>Favourite photos</h2>
-
-      <a href="favorite-1.jpg"><img src="favorite-1_th.jpg" alt="Small black bird, black claws, long black slender beak, links to larger version of the image"></a>
-      <a href="favorite-2.jpg"><img src="favorite-2_th.jpg" alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image"></a>
-      <a href="favorite-3.jpg"><img src="favorite-3_th.jpg" alt="Top half of a large bird with white plumage, very long curved narrow light colored break, links to larger version of the image"></a>
-      <a href="favorite-4.jpg"><img src="favorite-4_th.jpg" alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image"></a>
+    
+    <div class="main">
 
 
-      <p>This fake website example is CC0 — any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016.</p>
+    <article>
+        <div class="info">
+
+          <h2>Welcome</h2>
+
+          <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet pulvinar dui. Nulla in ante accumsan, euismod massa quis, feugiat mauris. Ut nec lacinia enim. Phasellus aliquam varius fermentum. Sed venenatis porttitor lacus, in convallis dolor fermentum non. In mi lectus, tincidunt eu tincidunt vel, mattis tempus velit. Mauris eu tincidunt urna. Duis mollis purus eget ligula tincidunt lacinia. Nam interdum velit a metus commodo maximus.
+
+          </p>
+
+          <p>
+           Proin ut lectus elit. Ut dapibus metus ex, non mollis turpis pulvinar quis. Sed semper auctor dignissim. Suspendisse vulputate eget tortor in egestas. Aliquam nec sem vestibulum, cursus neque eu, blandit dui. Morbi pharetra mi eu mattis vestibulum. Fusce ut tortor eleifend turpis ornare euismod in in tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum nisl felis, sit amet auctor dui semper eget. Nam in accumsan turpis, eget efficitur sapien. Curabitur urna metus, tincidunt vitae tellus eget, varius consequat orci. Vivamus dictum condimentum sapien, lacinia tempor erat tincidunt sed. Nunc placerat nulla lectus, posuere ultricies felis lobortis nec. Nam quis laoreet magna, non scelerisque urna. Suspendisse potenti. Phasellus tincidunt sem sit amet pulvinar porttitor.
+          </p>
+
+        </div>
+
+    </article>
+
+      
+
+    <aside class="pictures">
+
+      <h2>Favourite Photos</h2>
+    
+
+      <table id="birds">
+        <tr>
+           <td>
+              <a href="images/background_1.jpg">
+                <img src="images/background_1.jpg" alt="blue and purple gradient" credit="https://unsplash.com/@lukechesser?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" class="small">
+              </a>
+           </td>
+
+           <td>
+             <a href="images/background_2.jpg">
+              <img src="images/background_2.jpg" alt="blue and purple gradient" credit="https://unsplash.com/@lukechesser?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" class="small">
+             </a>
+           </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="images/background_3.jpg">
+              <img src="images/background_3.jpg" alt="blue and purple gradient" credit="https://unsplash.com/@lukechesser?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" class="small">
+            </a>
+          </td>
+
+          <td>
+             <a href="images/background_4.jpg">
+              <img src="images/background_4.jpg" alt="blue and purple gradient" credit="https://unsplash.com/@lukechesser?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" class="small">
+             </a>
+          </td>
+        </tr>
+
+      </table>
+    </aside>
+     
+    </div>
+
+
+
+
+
+
+
+    <div class="footer">
+
+      <p>This website example has been written by Andy Pineda, 2020</p>
+      <p> Images posted are not my own </p>
 
       <p><a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a> by Lorc.</p>
+    </div>
+
 
   </body>
+
+
+
+
 </html>
