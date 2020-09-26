@@ -31,31 +31,33 @@
 
             <!-- Contact Form -->
             <form>
-                <label for="name">Name</label>
-                <input type="text" name="name" required="required" />
-
-                <label for="lastname">Last Name</label>
-                <input type="text" name="lastname" required="required" />
-
-                <label for="email">Email</label>
-                <input type="email" name="email" required="required" />
 
 
-                <label for="phone">Phone</label>
-                <input type="number" name="phone" />
-
-                <label for="textfield">Text Field</label>
-                <textarea name="textfield"> Enter text here </textarea>
-                
-                <label for="age">Age</label>
-                <input type="radio" name="age" value="18-35" />
-                <input type="radio" name="age" value="35-50" />
-                <input type="radio" name="age" value="50-65" />
-
-
-                <input type="submit" name="submit" value="submit" />
-
-
+                <ul class="flex-outer">
+                    <li><label for="name">Name</label></li>
+                    <li><input type="text" name="name" id="name" required="required" size="140" /></li>
+    
+                    <li><label for="lastname">Last Name</label></li>
+                    <li><input type="text" name="lastname" id="lastname" required="required" size="140" /></li>
+    
+                    <li><label for="email">Email</label></li>
+                    <li><input type="email" name="email" id="email" required="required" /></li>
+    
+                    <li><label for="phone">Phone</label></li>
+                    <li><input type="number" name="phone" id="phone" /></li>
+    
+                    <li><label for="textfield">Text Field</label></li>
+                    <li><textarea name="textfield" id="textfield" cols="33" row="5"> Enter text here </textarea></li>
+                    
+                    <li><label for="age">Age</label></li>
+                        <ul class="flex-inner">
+                            <li><input type="checkbox" name="age" id="age" value="18-35" /></li>
+                            <li><input type="checkbox" name="age" id="age" value="35-50" /></li>
+                            <li><input type="checkbox" name="age" id="age" value="50-65" /></li>
+                        </ul>
+                    <input type="submit" name="submit" id="submit" value="submit" /></li>
+                </ul>
+              
 
             </form>
 
