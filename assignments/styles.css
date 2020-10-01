@@ -2,5 +2,17 @@ header{
     background-color: #BF9F3F;
     color: #F2856D;
     width: max-content;
-    
+    display: flex;
+    flex-flow: row wrap;   
+    align-content: center;
+}
+
+.wrapper{
+    display:flex;
+    align-content: center;
+}
+
+img{
+    height: 100px;
+    width: 100px;
 }
