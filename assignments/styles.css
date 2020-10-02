@@ -1,7 +1,10 @@
+/* Position */ 
+
+
 header{
-    background-color: #025940;
+    background-color: #D9556D;
     color: #F2D1C9;
-    display: flex; 
+    display: felx; 
     flex-flow: row wrap;
     
 }
@@ -27,16 +30,52 @@ header{
 	justify-content: center;
 	align-content: flex-start;
 	margin: 0 auto;
-
+	margin-top: 20px;
 
 }
+
+
+.image{
+   display:flex; 
+   align-content: center; 
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 15px;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+
+.info{
+   display:flex; 
+   align-content: center; 
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 15px;
+   margin-left:auto;
+   margin-right:auto;
+
+}
+
+.cap {
+   display:flex; 
+   align-content: center; 
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 15px;
+   margin-top: 20px;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+
 
 
 /* Pic Edit */ 
 
 img{
-	height:100px;
-	width:100px;
+	height:150px;
+	width:150px;
 }
 
 
@@ -46,9 +85,68 @@ img{
 	width: 300px;
 	max-width: 940px;
 	border:solid 1px red;
+	border-radius: 4px;
 }
 
 .image_cap{
 	min-width: 66%;
 	min-height: 66%;
+}
+
+
+
+
+
+
+
+/* Fonts */ 
+body{
+	color:black;
+}
+.header_title{
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 56px;
+}	
+
+p {
+	font-family: 'Piazzolla', serif;
+}
+
+li {
+	font-family: 'Piazzolla', serif;
+}
+
+h2{
+	font-family: 'Secular One', sans-serif;
+	text-decoration: underline;
+}
+
+
+a:link{
+	color:white;
+}
+
+a:visited{
+	color:white;
+}
+
+a:hover{
+	color:pink;
+}
+
+
+
+/* Style */ 
+
+body{
+	background-color: #A66151;
+}
+
+
+.info{
+	background-color: #D99379;
+}
+
+.cap{
+	background-color: #D99379;
 }
