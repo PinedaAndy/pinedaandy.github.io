@@ -1,3 +1,6 @@
+/* Position */ 
+
+
 header{
     background-color: #025940;
     color: #F2D1C9;
@@ -33,17 +36,53 @@ header{
 
 
 
+
+
+
+
 /* Pic Edit */ 
 
 img{
-	height:100px;
-	width:100px;
+	height:150px;
+	width:150px;
 }
 
 
 
 .red_pic{
-	height: 400px;
-	width: 400px;
+	height:300px;
+	width: 300px;
+	max-width: 940px;
+	border:solid 1px red;
+	border-radius: 4px;
+}
 
+.image_cap{
+	min-width: 66%;
+	min-height: 66%;
+}
+
+
+
+
+
+
+
+/* Fonts */ 
+.header_title{
+	font-family: 'Sansita Swashed', cursive;
+	font-size: 56px;
+}	
+
+.wrapper > p {
+	font-family: 'Piazzolla', serif;
+}
+
+li {
+	font-family: 'Piazzolla', serif;
+}
+
+h2{
+	font-family: 'Secular One', sans-serif;
+	text-decoration: underline;
 }
