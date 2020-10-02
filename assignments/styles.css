@@ -1,18 +1,23 @@
 header{
-    background-color: #BF9F3F;
-    color: #F2856D;
-    width: max-content;
-    display: flex;
-    flex-flow: row wrap;   
-    align-content: center;
+    background-color: #025940;
+    color: #F2D1C9;
+    display: felx; 
+    flex-flow: row wrap;
+    
 }
+
 
 .wrapper{
-    display:flex;
-    align-content: center;
+   display:flex; 
+   align-content: center; 
+   justify-content: space-between;
+   flex-wrap: wrap;
+
 }
 
+
+
 img{
-    height: 100px;
-    width: 100px;
+	height:100px;
+	width:100px;
 }
