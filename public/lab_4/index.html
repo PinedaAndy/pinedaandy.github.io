@@ -2,84 +2,78 @@
 
 <html lang="en">
 
-<head>
-    <title>Andy Pineda Lab 4</title>
+    <head>
+        <title>Andy Pineda Lab 4</title>
 
 
-    <!-- CSS Content -->
-    <link href="styles.css" type="text/css" rel="stylesheet" />
+        <!-- CSS Content -->
+        <link href="styles.css" type="text/css" rel="stylesheet" />
 
-</head>
+    </head>
 
 
 
-<body>
+    <body>
 
-    <!--Main Content Start -->
-    <div class="container">
-        
-        <h1>Andy Pineda Lab 4 </h1>
-        <!-- Contact Form -->
-        <form action="/api/" method="post">
+        <!--Main Content Start -->
+        <div class="container">
+            
+            <h1>Andy Pineda Lab 4 </h1>
+            <!-- Contact Form -->
 
-            <ul class="flex-outer">
-                <li>
-                    <label for="fname">First Name</label>
-                    <input type="text" name="name" id="fname" maxlength="140" />
-                </li>
-                <li>
-                    <label for="lname">Last Name</label>
-                    <input type="text" name="lastname" id="lname" maxlength="140" />
-                </li>
-                <li>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" />
-                </li>
-                <li>
-                    <label for="phone">Phone</label>
-                    <input type="tel" name="phone" id="phone" />
-                </li>
-                <li>
-                    <label for="message">Text Field</label>
-                    <textarea name="message" id="message" rows="5" cols="33"> Enter text here </textarea>
-                </li>
-                
-              
-                <ul class="flex-inner">
-                    <p>Age</p>
-                    <span>
-                        <li>
-                            <input type="checkbox" name="age" value="18-35">
-                            <label for="undefined">18-35</label>
-                        </li>
-                            <input type="checkbox" name="age" value="35-50">
-                            <label for="undefined">35-50</label>
-                        </li>
 
-                        <li>
-                            <input type="checkbox" name="age" value="50-65">
-                            <label for="undefined">50-65</label>
-                        </li>
-                    </span>
+            <form action="/api/" method="post">
+
+                <ul class="flex-outer">
+                    <li>
+                        <label for="fname">First Name</label>
+                        <input type="text" name="name" id="fname" maxlength="140" />
+                    </li>
+                    <li>
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lastname" id="lname" maxlength="140" />
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" />
+                    </li>
+                    <li>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" />
+                    </li>
+                    <li>
+                        <label for="message">Text Field</label>
+                        <textarea name="message" id="message" rows="5" cols="33"> Enter text here </textarea>
+                    </li>
+                    
+                    <li>
+                        <ul class="flex-inner">
+                            <li>
+                                <input type="checkbox" name="age" value="18-35">
+                                <label for="undefined">18-35</label>
+                            </li>
+                                <input type="checkbox" name="age" value="35-50">
+                                <label for="undefined">35-50</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="age" value="50-65">
+                                <label for="undefined">50-65</label>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button type="submit" name="undefined" id="formbutton"> Submit Form </button>
+                    </li>
+
                 </ul>
+            </form>
 
-                <li>
-                    <button type="submit" name="undefined" id="formbutton"> Submit Form </button>
-                </li>
+        </div>
+        <!-- Main Content End -->
 
-            </ul>
-        </form>
-
-    </div>
-    <!-- Main Content End -->
-
-
-
-
-
-
-
-</body>
+    </body>
 
 
 

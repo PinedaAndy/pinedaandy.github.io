@@ -15,13 +15,13 @@ app.use(express.static('public'));
 
 app.route('/api')
   .get((req, res) => {
-    console.log('GET request detected');
+    console.log("GETTING GET REQUEST");
     res.send(`Lab 5 for ${process.env.NAME}`);
   })
   .post((req, res) => {
     console.log('POST request detected');
     console.log('Form data in res.body', req.body);
-    res.send('<p>Hello world </p>')
+    res.send('<p>Andy Pineda</p>')
   });
 
 app.listen(port, () => {
