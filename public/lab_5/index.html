@@ -45,19 +45,28 @@
     </div>
 
 <script type="text/javascript">
+     
+
 
 
 
     function testFunction() {
-        fetch('/api')
+        fetch('/api',{method:'post',
+            body:FormData
+
+            })
         .then((response) => response.text())
         .then((response) => {
             console.log(response);
         })
+        
+
+
+
 
         // Gets the header and title name
-        var elheader_name = document.querySelector('.header_name').innerHTML = "Andy Header"; 
-        var eltitle_name = document.querySelector('.title_name').innerHTML = "Andy Title"; 
+        var elheader_name = document.querySelector('.header_name').innerHTML = "Lab 5 for Andy Pineda"; 
+        var eltitle_name = document.querySelector('.title_name').innerHTML = "Lab 5 for Andy Pineda"; 
         
 
         //Change background color 

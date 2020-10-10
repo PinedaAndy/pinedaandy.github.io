@@ -15,7 +15,7 @@ app.use(express.static('public'));
 
 app.route('/api')
   .get((req, res) => {
-    console.log("GETTING GET REQUEST");
+    console.log(`Lab 5 for ${process.env.NAME}`);
     res.send(`Lab 5 for ${process.env.NAME}`);
   })
   .post((req, res) => {
