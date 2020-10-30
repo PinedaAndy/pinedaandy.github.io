@@ -51,10 +51,7 @@
 
 
     function testFunction() {
-        fetch('/api',{method:'post',
-            body:FormData
-
-            })
+        fetch('/api')
         .then((response) => response.text())
         .then((response) => {
             console.log(response);
