@@ -3,6 +3,7 @@
 /* eslint-disable no-unused-vars */
 import express from 'express';
 import dotenv from 'dotenv';
+import fetch from 'node-fetch';
 
 dotenv.config();
 
@@ -23,11 +24,26 @@ app.route('/api')
   .get((req, res) => {
     console.log(`Lab 5 for ${process.env.NAME}`);
     res.send(`Lab 5 for ${process.env.NAME}`);
+
   })
-  .post((req, res) => {
+  .post(async(req, res) => {
+
     console.log('POST request detected');
-    console.log('Form data in res.body', req.body);
-    res.send('<p>Andy Pineda</p>')
+    
+    // Make a fetch request to the price geroge county api 
+    // grab the json data 
+    const data = await fetch("https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json");
+    const json = await data.json();
+
+    // Submit the data to console log to review 
+    console.log('Form data in res.body', json);
+
+
+    // send back the data in a json instead of res.send which is only returning a string 
+    res.json(json)
+
+
+
   });
 
 app.listen(port, () => {
