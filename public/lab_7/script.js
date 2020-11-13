@@ -1,25 +1,29 @@
-const { json } = require("express");
+
 
 function convertRestaurantsToCategories(restaurantList) {
-  // process your restaurants here!
 
   
   const list = restaurantList.reduce((collection, item, i) => {
-    // for each check 
+    //Checks for item category and append if not in arrray 
     const findCat = collection.find((f) => f.label === item.category);
+
+
     if (!findCat) {
       collection.push({
-        y:1,
-        label: item.cateogry, 
+        label: item.cateogry,
+        y:1, 
       });
-    } else {
+    } else 
+    { 
       findCat.y += 1; 
     }
+
+
     return collection;
   }, []); 
 
   
-
+  console.table(list)
   return list;
 
 }
